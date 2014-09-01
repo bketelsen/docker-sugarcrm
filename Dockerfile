@@ -7,7 +7,3 @@ RUN apt-get update && apt-get upgrade -y && \
 	rm -rf /var/www/* && \
 	cp -R SugarCE-Full-6.5.17/* /var/www/ && \
 	chown -R www-data:www-data /var/www/*
-
-EXPOSE 80
-CMD []
-ENTRYPOINT ["apachectl", "-DFOREGROUND"]
